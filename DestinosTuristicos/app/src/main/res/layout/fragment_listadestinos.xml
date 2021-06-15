@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.listadestinos.ListaDestinosFragment">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+
+        <ListView
+            android:id="@+id/listadestinos"
+            android:layout_width="match_parent"
+            android:layout_height="568dp"
+            android:layout_centerInParent="true">
+
+        </ListView>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
