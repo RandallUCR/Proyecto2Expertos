@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.criterios.CriteriosFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="CRITERIOS" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/rgPrecios"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layoutDirection="ltr">
+
+                <RadioButton
+                    android:id="@+id/rbEconomico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:checked="true"
+                    android:text="Económico" />
+
+                <RadioButton
+                    android:id="@+id/rbRegular"
+                    android:layout_width="103dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:checked="false"
+                    android:text="Regular" />
+
+                <RadioButton
+                    android:id="@+id/rbPremium"
+                    android:layout_width="102dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:checked="false"
+                    android:text="Premium" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Tipo turista" />
+
+            <Spinner
+                android:id="@+id/spinner_tipo_turista"
+                android:layout_width="match_parent"
+                android:layout_height="47dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Tipo turismo" />
+
+            <Spinner
+                android:id="@+id/spinner_tipo_turismo"
+                android:layout_width="match_parent"
+                android:layout_height="47dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Provincia" />
+
+            <Spinner
+                android:id="@+id/spinner_tipo_provincia"
+                android:layout_width="match_parent"
+                android:layout_height="47dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Tipo Visitas" />
+
+            <Spinner
+                android:id="@+id/spinner_tipo_visitas"
+                android:layout_width="match_parent"
+                android:layout_height="47dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buscarBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="69dp"
+                android:layout_weight="1"
+                android:text="Buscar" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
